@@ -146,6 +146,104 @@
           class="w-full h-[70%] object-cover rounded-xl shadow-custom-shadow">
       </div>
     </section>
+    <section class=" w-[100%] h-[130%]  px-[10%] ">
+      <div class="w-[100%] h-full  gap-8 p-6">
+        <p class="text-black font-google-anta text-4xl font-bold mb-6" style="text-shadow: 3px 3px #31bb11;">Contáctanos
+        </p>
+        <div class="text-black font-google-anta text-2xl text-justify leading-relaxed tracking-wide ">
+          <p class="font-bold text-3xl pb-4 text-gray-800">¿Tienes Preguntas o Comentarios?
+          </p>
+          <p class="text-xl text-gray-700 leading-relaxed mb-6">En UrbanEase Solutions, valoramos cada comentario y
+            pregunta que recibimos. Nuestro equipo está dedicado a proporcionar respuestas y asistencia de la manera más
+            rápida y efectiva posible. Si tienes alguna duda sobre nuestros servicios, funcionalidades o cualquier otra
+            inquietud, no dudes en comunicarte con nosotros.</p>
+          <p class="font-bold text-3xl pb-4 text-gray-800">¿Cómo Puedes Contactarnos?
+          </p>
+          <p class="text-xl text-gray-700 leading-relaxed mb-6">Hemos establecido múltiples canales de comunicación para
+            asegurarnos de que puedas ponerte en contacto con nosotros de la manera más conveniente para ti. A
+            continuación, te proporcionamos toda la información necesaria para contactarnos:</p>
+          <p class="text-xl text-gray-700 leading-relaxed mb-6 font-bold">Dirección Física:</p>
+          <ul class="list-disc pl-8 text-xl text-gray-700 leading-relaxed mb-6">
+            <li>
+              Mejorar la funcionalidad del sitio web.
+            </li>
+            <li>
+              Analizar el tráfico y el uso del sitio.
+            </li>
+            <li>
+              Personalizar su experiencia de navegación.
+            </li>
+            <li>
+              Recordar sus preferencias de usuario.
+            </li>
+          </ul>
+          <p class="text-xl text-gray-700 leading-relaxed mb-6 font-bold">Teléfonos:</p>
+          <ul class="list-disc pl-8 text-xl text-gray-700 leading-relaxed mb-6">
+            <li>
+              Oficina Principal: +591 123 456 789
+            </li>
+            <li>
+              Servicio al Cliente: +591 987 654 321
+            </li>
+          </ul>
+          <p class="text-xl text-gray-700 leading-relaxed mb-6 font-bold">Correo Electrónico:</p>
+          <ul class="list-disc pl-8 text-xl text-gray-700 leading-relaxed mb-6">
+            <li>
+              {{"Consultas Generales: info@urbaneasesolutions.com"}}
+            </li>
+            <li>
+              {{"Soporte Técnico: soporte@urbaneasesolutions.com"}}
+            </li>
+          </ul>
+          <p class="text-xl text-gray-700 leading-relaxed mb-6 font-bold">Interesado en una Demostración</p>
+          <p class="text-xl text-gray-700 leading-relaxed mb-6">Si estás interesado en ver una demostración de nuestras
+            soluciones, nos encantaría mostrarte cómo UrbanEase Solutions puede beneficiar a tu comunidad. Puedes
+            solicitar una demostración visitando nuestra página especial para el Distrito 7. Aquí te mostraremos todas
+            las funcionalidades y beneficios de nuestra plataforma en tiempo real.</p>
+          <p class="font-bold text-3xl pb-4 text-gray-800">Visita la Página del Distrito 7:</p>
+          <div class="text-xl text-gray-700 leading-relaxed mb-6">
+            <a class="text-blue-500 font-bold underline" href="https://gilded-tiramisu-d90df6.netlify.app/">
+              Ver Demostración WEB
+            </a>
+            <br>
+            <a class="text-blue-500 font-bold underline"
+              href="https://drive.google.com/file/d/1QjzaDXfpg8mn7TWmWyS-WsQjdmSg4J2L/view?usp=sharing">
+              Ver Demostración Mobil
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </section>
+    <section class="flex flex-row w-[100%] h-[80%]  px-[10%]">
+      <div class="w-[60%] h-full flex flex-col  gap-8 p-6 items-center justify-center">
+        <p class="text-black font-google-anta text-4xl font-bold " style="text-shadow: 3px 3px #31bb11;">
+          Formulario de
+          Contacto
+        </p>
+        <div class="h-[80%] w-[100%] text-black font-google-anta text-2xl text-justify leading-relaxed tracking-wide ">
+          <div class="flex flex-row w-full h-[15%] gap-[3%] justify-center items-center">
+            <input placeholder="Nombre Completo" type="text" name="" id=""
+              class="px-[2%] text-2xl text-black font-google-anta outline-none h-[80%] w-[50%] border-2  focus:border-4 border-slate-300 focus:border-custom-primary rounded-xl">
+            <input placeholder="Correo Electronico" type="text" name="" id=""
+              class="px-[2%] text-2xl text-black font-google-anta outline-none h-[80%] w-[50%] border-2 focus:border-4 border-slate-300 focus:border-custom-primary rounded-xl">
+          </div>
+          <textarea name="" id="" placeholder="Mensaje de consulta"
+            class="h-[60%] w-full resize-none p-[2%] text-2xl text-black font-google-anta outline-none  border-2 focus:border-4 border-slate-300 focus:border-custom-primary rounded-xl"></textarea>
+          <div class="flex flex-row w-full h-[15%] gap-[3%] ">
+            <button (click)="executeReCaptchaV3()"
+              class="bg-custom-primary text-white font-bold font-google-anta text-2xl px-[2%] py-[1%] rounded-md ">Enviar</button>
+            <re-captcha (resolved)="executeRecaptchaVisible($event)"
+              siteKey="6Ld1xgIqAAAAAOAwQZnlSdGdtauj789F_sekMOmQ" />
+          </div>
+        </div>
+      </div>
+      <div class=" w-[40%] h-full flex items-center justify-center">
+        <img src="https://i.pinimg.com/564x/93/da/c3/93dac36b22f0d605e3421f33f810ebbd.jpg" alt=""
+          class="w-full h-[70%] object-cover rounded-xl shadow-custom-shadow">
+      </div>
+    </section>
+
     <section class="shadow-customMap-shadow flex  flex-col justify-between bg-custom-primary w-full h-[23%] px-[3%]">
       <div class="flex flex-row h-[75%] w-full ">
         <div class=" flex flex-col  w-[50%] h-full gap-[1%] items-start justify-center">
@@ -176,5 +274,71 @@
         <p class="text-white font-bold font-google-anta text-3xl"> Copyright © 2024. Todos los derechos reservados</p>
       </div>
     </section>
+
+  </div>
+</div>
+<!-- Overlay/Modal Background -->
+<div [ngClass]="{'hidden': !showModal}" class="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center "
+  id="model">
+  <div
+    class="bg-slate-50 h-[55%] w-[50%] rounded-xl flex flex-col gap-[2%] justify-center items-center px-[1.5%] py-[0.5%]">
+    <p class="font-bold text-4xl font-google-anta " style="text-shadow: 2px 2px #31bb11;"> USO DE COOKIES
+    </p>
+    <div class="w-full h-[70%] flex-shrink-0 overflow-auto pr-8 font-google-anta  rounded-lg p-[1%]">
+      <p class="font-bold text-3xl pb-4 text-gray-800">¿Qué son las cookies?</p>
+      <p class="text-xl text-gray-700 leading-relaxed mb-6">Las cookies son pequeños archivos de texto que se almacenan
+        en su dispositivo cuando visita nuestro sitio web. Nos ayudan a mejorar su experiencia al recordar sus
+        preferencias y visitas.</p>
+      <p class="font-bold text-3xl pb-4 text-gray-800">¿Por qué usamos cookies?</p>
+      <ul class="list-disc pl-8 text-xl text-gray-700 leading-relaxed mb-6">
+        <li>
+          Mejorar la funcionalidad del sitio web.
+        </li>
+        <li>
+          Analizar el tráfico y el uso del sitio.
+        </li>
+        <li>
+          Personalizar su experiencia de navegación.
+        </li>
+        <li>
+          Recordar sus preferencias de usuario.
+        </li>
+      </ul>
+      <p class="font-bold text-3xl pb-4 text-gray-800">Tipos de cookies que utilizamos:</p>
+      <ul class="list-disc pl-8 text-xl text-gray-700 leading-relaxed mb-6">
+        <li>
+          <strong>Cookies esenciales:</strong> Necesarias para el funcionamiento básico del sitio web.
+        </li>
+        <li>
+          <strong>Cookies de rendimiento:</strong> Nos ayudan a entender cómo los usuarios interactúan con nuestro
+          sitio.
+        </li>
+        <li>
+          <strong>Cookies de funcionalidad:</strong>
+          Permiten recordar sus preferencias y mejorar su experiencia.
+        </li>
+        <li>
+          <strong>Cookies de publicidad:</strong>
+          Utilizadas para mostrar anuncios relevantes y personalizados.
+        </li>
+      </ul>
+      <p class="font-bold text-3xl pb-4 text-gray-800">¿Cómo puede gestionar las cookies?</p>
+      <p class="text-xl text-gray-700 leading-relaxed mb-6">Puede gestionar y eliminar las cookies a través de la
+        configuración de su navegador. Tenga en cuenta que deshabilitar las cookies puede afectar su experiencia en
+        nuestro sitio web.
+        Para más información sobre cómo usamos las cookies y cómo puede gestionarlas, consulte nuestra
+        <a class="text-blue-500 font-bold underline" href="" routerLink="/politicas-empresa">
+          Política de
+          Privacidad.
+        </a>
+      </p>
+    </div>
+    <div class=" w-[100%] h-[14%] flex flex-row justify-end items-end py-[0.5%] gap-[2%]">
+      <button (click)="continuar()"
+        class="bg-custom-primary text-white font-bold font-google-anta text-2xl px-[2%] py-[1%] rounded-md ">Rechazar</button>
+      <button (click)="rechazar()"
+        class="bg-custom-primary text-white font-bold font-google-anta text-2xl px-[2%] py-[1%] rounded-md ">Aceptar</button>
+
+    </div>
   </div>
 </div>
